@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import { AppBar, Button } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 
 const Home = () => {
   return (
@@ -12,7 +12,10 @@ const Home = () => {
       </Head>
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <div>
+        <div className="bg-gray-400 p-5">
+          <Button color='secondary' variant="outlined">Primary</Button>
+        </div>
+        <div className="p-5">
           <Button color='secondary' variant="outlined">Primary</Button>
         </div>
       </main>
